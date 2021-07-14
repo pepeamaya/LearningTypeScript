@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "ES6",
         "outDir": "dist",
         "allowJs": true,
         "checkJs": true,
-        "lib": ["es2015.promise", "webworker", "dom"]
+        // "lib": ["es2015.promise", "webworker", "dom"]
     }
 }

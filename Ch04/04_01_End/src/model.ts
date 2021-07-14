@@ -54,6 +54,7 @@ function clone<T, U>(source: T, options: U): T {
 }
 
 const cloned = clone(inventoryItem, { deep: true });
+// const cloned = clone<InventoryItem>(inventoryItem);
 
 class KeyValuePair<TKey, TValue> {
     Key: TKey;

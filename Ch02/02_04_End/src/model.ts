@@ -3,7 +3,7 @@ let inventoryType: string = "furniture";
 let trackingNumber: string = "FD123455";
 let createDate: Date = new Date();
 
-type Cost = number | string;
+type Cost = number | string; // definded custom types and union types
 
 let originalCost: Cost;
 

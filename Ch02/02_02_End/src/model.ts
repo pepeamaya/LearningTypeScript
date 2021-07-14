@@ -7,11 +7,14 @@ let originalCost = 425;
 interface InventoryItem {
     displayName: string;
     inventoryType: string;
-    readonly trackingNumber: string;
+    // readonly requires that every inventory item object has a property name tracking number
+    // with the string value just as this object does. You cannot reasign this prop
+    readonly trackingNumber: string;  
     createDate: Date;
     originalCost?: number;
 
     addNote?: (note: string) => string;
+    // addNote2(note: string): string;
 }
 
 function getInventoryItem(trackingNumber: string): InventoryItem {
